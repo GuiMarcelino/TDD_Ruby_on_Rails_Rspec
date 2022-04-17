@@ -10,7 +10,4 @@ describe 'Matcher change'  do
 
   # abaixo a validação fica ainda melhor valido que o valor alterou do numero atual para o seguinte
   it { expect{(Contador.incrementa)}.to change { Contador.qtd}.from(2).to(3) }
-
-
-
 end
