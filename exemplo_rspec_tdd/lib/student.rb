@@ -6,4 +6,7 @@ class Student
 
   def foo(arg)
   end
+
+  def bar
+  end
 end
