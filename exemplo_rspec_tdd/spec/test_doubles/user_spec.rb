@@ -6,8 +6,16 @@ describe 'Test Double' do
     # tambem podemos usar a sintaxe
     allow(user).to receive(:name).and_return('Guilherme')
     allow(user).to receive(:password).and_return('123')
+    puts user.name
+    puts user.password
+  end
 
-
+  it 'as_null_object' do
+    # ignora erros do double
+    user = double('User').as_null_object
+    allow(user).to receive_messages(name: 'Guilherme', password: '123')
+    allow(user).to receive(:name).and_return('Guilherme')
+    allow(user).to receive(:password).and_return('123')
     puts user.name
     puts user.password
   end
