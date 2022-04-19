@@ -1,6 +1,6 @@
 require 'student'
 require 'course'
-
+# os stubs são utilizados para substituir estados
 # stub força uma resposta de alguem que estou necesitando naquele momento, mesmo que o meu método has_finished? não tenha nada
 # no allow eu crio uma instancia de course e espero que has_finished? seja true.
 # aqui a classe é verdadeira so o objeto que é um double
