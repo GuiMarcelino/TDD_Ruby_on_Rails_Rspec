@@ -13,7 +13,8 @@ describe 'Stub' do
 
     allow(student).to receive(:has_finished?)
                         .with(an_instance_of(Course))
-                        .and_return(true)
+                        .and_return(true) # nesse caso o meu stub vai receber a chamada do método has_finished?
+    # passando com argumento alguém que é to dipo Course, esperando true
 
     course_finished = student.has_finished?(course)
 
